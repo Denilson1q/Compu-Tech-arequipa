@@ -1,0 +1,60 @@
+html{
+    font-family: system-ui;
+}
+a{
+    text-decoration: none;
+   
+}
+body{
+    background-image: url(tecno.jpeg);
+}
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+ul{
+    display: block;
+    font-weight: bold;
+    list-style: none;
+    font-size: 20px;
+    padding-left: 1200px;
+ }
+.column-2.carta{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+.imagen{
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    background-color:rgb(139, 155, 155)
+}
+.imagen-producto{
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+}
+.imagen-producto img{
+    max-width: 100px;
+    max-height: 75px;
+}
+.titulo{
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    flex-basis: 60%;
+    padding: 0 1rem;
+}
+.precio{
+    display: flex;
+    flex-basis: 15%;
+    justify-content: center;
+    font-weight: bold;
+}
+@media (max-width:680px){
+    .general{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
